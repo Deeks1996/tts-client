@@ -113,7 +113,7 @@ function TTSPage() {
     
     try {
       const response = await axios.post(`${BACKEND_URL}/tts/convert`, 
-        { text: inputText }, 
+        { text }, 
         {
         headers: {
           "Content-Type": "application/json",
