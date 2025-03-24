@@ -10,7 +10,7 @@ import * as pdfjsLib from "pdfjs-dist";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "https://tts-backend-nine.vercel.app";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "https://tts-server-theta.vercel.app";
 const MAX_CHAR_LIMIT = 2000;
 
 function TTSPage() {
