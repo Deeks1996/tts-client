@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-tts{
+  overflow: hidden;
+  background-image: linear-gradient(to right,rgb(116, 178, 240),rgb(9, 11, 28),rgb(116,178,240));
+}
+
+.bg-login{
+  overflow: hidden;
+  background-image: linear-gradient(to right,rgb(80,8,10),rgb(1, 7, 50),rgb(80,8,10));
+}
