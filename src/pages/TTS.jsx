@@ -160,7 +160,7 @@ function TTSPage() {
         
         <p className="mt-2 text-white text-center"> OR </p>
 
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full space-2">
           <label className="flex flex-col items-center justify-center w-full border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-white">
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
               <FaFileUpload className="w-10 h-10 mb-4 text-blue-500 dark:text-gray-400 hover:text-blue-400" />
