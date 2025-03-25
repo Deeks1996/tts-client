@@ -144,7 +144,7 @@ function TTSPage() {
       
       <h2 className="text-3xl font-bold mb-4 text-gray-200">Text-to-Speech</h2>
 
-      <div className="flex flex-col w-full max-w-lg bg-black p-6 rounded-lg shadow-md space-y-4 border-2 border-gray-200"> 
+      <div className="flex flex-col w-full max-w-lg bg-black p-6 rounded-lg shadow-md border-2 border-gray-200"> 
         <textarea
           className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           rows="4"
@@ -156,6 +156,7 @@ function TTSPage() {
           }}
           disabled={file}
         />
+        <small className="text-red-500 text-right">max 2000 characters</small>
         
         <p className="mt-2 text-white text-center"> OR </p>
 
