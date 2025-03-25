@@ -33,12 +33,12 @@ function Register() {
       <form className="flex flex-col w-full max-w-md bg-slate-400 p-8 rounded-lg shadow-md space-y-4 border-2 border-gray-200" onSubmit={handleRegister}>
       
         <input type="email" 
-        placeholder="Enter a Email Address" 
+        placeholder="Enter Email Address" 
         className="rounded-lg p-2"
         value={email} onChange={(e) => setEmail(e.target.value)} required />
 
         <input type="password" 
-        placeholder=" Create a Password" className="rounded-lg p-2"
+        placeholder=" Create a Password (min 6 chars)" className="rounded-lg p-2"
         value={password} onChange={(e) => setPassword(e.target.value)} required />
 
         <div className="flex justify-center">
