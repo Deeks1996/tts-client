@@ -160,8 +160,8 @@ function TTSPage() {
           onChange={handleChange}
           disabled={file}
         />
-        <p style={{ color: text.length === MAX_CHAR_LIMIT ? "red" : "black" }}>
-        {MAX_CHAR_LIMIT - text.length} characters left
+        <p style={{ text:"right";color: text.length === MAX_CHAR_LIMIT ? "red" : "white" }}>
+        {MAX_CHAR_LIMIT - text.length}/{MAX_CHAR_LIMIT} characters left
         </p>
         
         <p className="mt-2 text-white text-center"> OR </p>
