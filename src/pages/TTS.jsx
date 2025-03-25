@@ -160,7 +160,7 @@ function TTSPage() {
           onChange={handleChange}
           disabled={file}
         />
-        <p style={{ text:right,color: text.length === MAX_CHAR_LIMIT ? "red" : "white" }}>
+        <p className="text-right" style={{color: text.length === MAX_CHAR_LIMIT ? "red" : "white" }}>
         {MAX_CHAR_LIMIT - text.length} characters left
         </p>
         
