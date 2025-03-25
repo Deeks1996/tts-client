@@ -27,7 +27,12 @@ function Register() {
   };
 
   return (
-    <div className="flex flex-col w-full items-center bg-login min-h-screen p-3">
+    <div className="flex flex-row min-h-screen">
+      <div className="flex flex-col w-full items-center min-h-screen">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQEhD5agZRYvHg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1687758916965?e=2147483647&v=beta&t=IYYpHdfozk3180RsBiM8c1ISmx7gruqh4Li0n8RR2gA" className="w-full h-full"  />
+      </div>
+
+      <div className="flex flex-col w-full items-center bg-login min-h-screen p-3">
       <h2 className="text-3xl font-bold mb-4 text-gray-200 mt-10">Register</h2>
 
       <form className="flex flex-col w-full max-w-md bg-slate-400 p-8 rounded-lg shadow-md space-y-4 border-2 border-gray-200" onSubmit={handleRegister}>
@@ -51,6 +56,7 @@ function Register() {
       </form>
       <ToastContainer/>
     </div>
+  </div>
   );
 }
 export default Register;
