@@ -27,8 +27,8 @@ function Login() {
   return (
     <div className="flex flex-row min-h-screen">
       <div className="flex flex-col w-full items-center min-h-screen">
-      <img src="https://media.licdn.com/dms/image/v2/D5612AQEhD5agZRYvHg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1687758916965?e=2147483647&v=beta&t=IYYpHdfozk3180RsBiM8c1ISmx7gruqh4Li0n8RR2gA" height="100%" />
-    </div>
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQEhD5agZRYvHg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1687758916965?e=2147483647&v=beta&t=IYYpHdfozk3180RsBiM8c1ISmx7gruqh4Li0n8RR2gA" className="w-full h-full" />
+      </div>
     
     <div className="flex flex-col w-full items-center bg-login min-h-screen p-3">
       <h1 className="text-3xl font-bold mb-4 text-gray-200 mt-16">Login</h1>
