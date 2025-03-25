@@ -137,14 +137,14 @@ function TTSPage() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen w-full p-3 bg-tts">
+    <div className="flex flex-col items-center min-h-screen w-full p-3 bg-tts ">
       <div className="flex flex-row justify-end w-full">
         <LogoutButton/>
       </div>
       
       <h2 className="text-3xl font-bold mb-4 text-gray-200">Text-to-Speech</h2>
 
-      <div className="flex flex-col w-full max-w-lg p-6 rounded-lg shadow-md border-2 border-gray-200 bg-slate-400"> 
+      <div className="flex flex-col w-full max-w-lg p-6 rounded-lg shadow-md border-2 border-gray-200 bg-slate-400 space-y-4"> 
         <textarea
           className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           rows="4"
@@ -160,7 +160,7 @@ function TTSPage() {
         
         <p className="mt-2 text-white text-center"> OR </p>
 
-        <div className="flex items-center justify-center w-full space-2">
+        <div className="flex items-center justify-center w-full">
           <label className="flex flex-col items-center justify-center w-full border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-white">
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
               <FaFileUpload className="w-10 h-10 mb-4 text-blue-500 dark:text-gray-400 hover:text-blue-400" />
