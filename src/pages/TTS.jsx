@@ -30,6 +30,12 @@ function TTSPage() {
     getUserToken();
   }, []);
 
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    if (e.target.value.length <= MAX_CHAR_LIMIT) {
+      setText(e.target.value);
+    }
+  };
+  
  const handleFileUpload = async (e) => {
     const uploadedFile = e.target.files[0];
     if (!uploadedFile) toast.error("Please upload a file!",{position:"top-right",autoclose:2000});
@@ -156,7 +162,9 @@ function TTSPage() {
           }}
           disabled={file}
         />
-        <small className="text-red-500 text-right">max 2000 characters</small>
+        <p style={{ color: text.length === MAX_CHAR_LIMIT ? "red" : "black" }}>
+        {MAX_CHAR_LIMIT - text.length} characters left
+        </p>
         
         <p className="mt-2 text-white text-center"> OR </p>
 
