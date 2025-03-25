@@ -30,9 +30,10 @@ function TTSPage() {
     getUserToken();
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     if (e.target.value.length <= MAX_CHAR_LIMIT) {
       setText(e.target.value);
+      setFile(null);
     }
   };
   
@@ -156,10 +157,7 @@ function TTSPage() {
           rows="4"
           placeholder="Enter text here..."
           value={text}
-          onChange={(e) => {
-            setText(e.target.value);
-            setFile(null);
-          }}
+          onChange={handleChange}
           disabled={file}
         />
         <p style={{ color: text.length === MAX_CHAR_LIMIT ? "red" : "black" }}>
