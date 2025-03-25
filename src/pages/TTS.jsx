@@ -144,7 +144,7 @@ function TTSPage() {
       
       <h2 className="text-3xl font-bold mb-4 text-gray-200">Text-to-Speech</h2>
 
-      <div className="flex flex-col w-full max-w-lg p-6 rounded-lg shadow-md border-2 border-gray-200 bg-slate-400 space-y-4"> 
+      <div className="flex flex-col w-full max-w-lg p-6 rounded-lg shadow-md border-2 border-gray-200 bg-slate-700 space-y-4"> 
         <textarea
           className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           rows="4"
