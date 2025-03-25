@@ -11,3 +11,7 @@
   overflow: hidden;
   background-image: linear-gradient(to right,rgb(5, 83, 156),rgb(1, 7, 50),rgb(5, 83, 156));
 }
+
+body{
+  font-family: 'Inter',sans-serif;
+}
